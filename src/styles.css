@@ -1,0 +1,40 @@
+/* Importando a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aplicando a fonte Poppins como padrão */
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Aplicando Brutalisme para títulos */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'brutalisme-regular', sans-serif;
+  }
+
+  p, button, a {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Classe utilitária para a fonte Brutalisme */
+.font-brutalisme {
+  font-family: 'brutalisme-regular', sans-serif;
+}
+
+/* Estilos base para o body */
+body {
+  color: #4A4658; /* text-text-300 */
+  overflow-x: hidden;
+}
+
+/* Reset para inputs */
+input {
+  border: transparent !important;
+  padding: 0 !important;
+}
+

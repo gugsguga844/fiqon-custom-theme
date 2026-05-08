@@ -1,0 +1,155 @@
+
+
+.s-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  background-image: url("http://fiqon-backup.local/wp-content/uploads/2024/12/Frame-48096813.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  min-height: 592px;
+  width: 100%;
+  padding: 164px 60px;
+}
+
+/* HERO  */
+.s-hero {
+  display: flex;
+  width: 100%;
+  max-width: 1260px;
+  gap: 32px;
+}
+
+.hero-column:first-child {
+  width: 70%;
+}
+
+.hero-column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%; 
+}
+
+.s-hero h1 {
+  font-weight: 700;
+  line-height: normal;
+  max-width: 80%;
+}
+
+.s-hero p {
+  max-width: 70%;
+}
+
+.highlight {
+  color: var(--primary-400) !important;
+}
+
+.hero-btn {
+  display: flex;
+  background-color: var(--primary-btn);
+  color: #fff !important;
+  width: 100%;
+  max-width: 504px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+.hero-btn:hover {
+  background-color: var(--primary-btn-hover);
+}
+
+.logo-content img {
+  width: 232px;
+}
+
+/* section apps  */
+.single-app {
+  background-color: #e1e1e1;
+}
+
+/* SEGUNDA DOBRA  */
+.s-possibilities {
+  padding: 40px 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--light-gray-100);
+  padding: 16px;
+  width: 32%;
+  border-radius: 10px;
+}
+
+.card-logo img {
+  width: 100px;
+  margin: -10px;
+  margin-bottom: -18px;
+}
+
+.tab-navigation {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-item {
+  padding: 6px 16px;
+  cursor: pointer;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-400);
+  color: var(--primary-400);
+  transition: background-color ease 0.3s;
+}
+
+.tab-item.active {
+  background-color: var(--primary-btn);
+  color: #fff;
+  border: none;
+}
+
+/* Conteúdo das abas */
+.tab-content {
+  border-radius: 0 0 4px 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}

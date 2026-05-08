@@ -1,0 +1,344 @@
+/**
+ * Theme Name:     React theme
+ * Author:         Elementor Team
+ * Text Domain:	   teste
+ * Template:       hello-elementor
+ * Description:    A plain-vanilla &amp; lightweight theme for Elementor page builder
+ */
+
+/* Reset básico */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+} */
+
+/* Banner  */
+.banner {
+  background-color: #171917;
+  color: #fff;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navbar */
+.fiqon-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00180E;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  max-width: 100%;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  gap: 32px;
+  width: 300px;
+}
+
+.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  height: 20px !important;
+  max-width: 100px !important;
+}
+
+/* Botão de Menu Mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 21px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 2px;
+}
+
+/* Estilo das barras do ícone */
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: #D1FC92;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle.open .top-bar {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.menu-toggle.open .middle-bar {
+  opacity: 0;
+}
+
+.menu-toggle.open .bottom-bar {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Menu Desktop */
+.desktop-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-items {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  padding: 0px !important;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #D1FC92;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Poppins, Sans-Serif;
+}
+
+.menu-items li a:hover {
+  font-weight: 700;
+  color: #D1FC92;
+}
+
+.menu-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.c-btn {
+  padding: 8px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  /* width: 164px; */
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, Sans-Serif;
+}
+
+.c-btn-outline {
+  border: 1px solid #D1FC92;
+  background: none;
+  color: #D1FC92;
+  transition: background-color ease-in-out 0.2s;
+  font-family: Poppins, Sans-Serif;
+}
+
+.c-btn-outline:hover {
+  background-color: rgba(0, 138, 53, 0.1);
+}
+
+.c-btn-primary {
+  background-color: #D1FC92;
+  color: #0E3F2F;
+  border: none;
+  transition: background-color ease-in-out 0.2s;
+}
+
+.c-btn-primary:hover {
+  background-color: #B8E878;
+  color: #0B2F23;
+}
+
+/* Menu Mobile */
+.menu {
+  position: sticky;
+  top: 53px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: #001C14;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: height 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.menu.open {
+  height: auto;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  z-index: 999;
+}
+
+@media (max-width: 824px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    padding: 0;
+    margin: 16px 0px 32px 0px;
+    z-index: 999;
+  }
+
+  .menu-buttons {
+    display: none !important;
+  }
+
+  .menu-buttons-mobile {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .c-btn {
+    width: 100%;
+  }
+}
+
+
+/* Estilos do Footer */
+/* Footer */
+.footer {
+  background-color: #0F261E;
+  color: #fff;
+  padding: 80px 112px;
+  font-family: Poppins, sans-serif;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h3 {
+  color: #D1FC92;
+  margin-bottom: 16px;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.footer-column ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #cbefe9;
+  opacity: 0.8;
+  display: inline-block;
+  /* Permite usar transform */
+  transition: opacity 0.3s, transform 0.1s;
+}
+
+.footer-column ul a:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons a img {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+
+/* Responsividade */
+@media (max-width: 1264px) {
+  .column-void {
+    display: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .logo-column {
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .footer {
+    padding: 56px 24px;
+  }
+
+  .logo-container {
+    display: flex;
+    width: 100%;
+  }
+}

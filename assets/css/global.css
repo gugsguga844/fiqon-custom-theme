@@ -1,0 +1,22 @@
+
+:root {
+  --primary-400: #0e3f2f;
+  --primary-btn: #0e3f2f; 
+  --primary-btn-hover: #0F261E;
+  --light-text-300: #4A4658;
+  --light-text-100: #7B7885;
+  --stroke: #DCE5F0;
+  --light-gray-100: #F6F6F7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1260px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
